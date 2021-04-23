@@ -8,9 +8,7 @@ project(pick_objects)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
-  actionlib
-  move_base_msg
-  roscpp
+  cpp
 )
 
 ## System dependencies are found with CMake's conventions
@@ -105,7 +103,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES pick_objects
-#  CATKIN_DEPENDS actionlib move_base_msg roscpp
+#  CATKIN_DEPENDS cpp
 #  DEPENDS system_lib
 )
 
